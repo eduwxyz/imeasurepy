@@ -25,3 +25,13 @@ mkdocstrings-python = "^1.1.0"
 [build-system]
 requires = ["poetry-core"]
 build-backend = "poetry.core.masonry.api"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = "--doctest-modules"
+
+
+[tool.taskipy.tasks]
+
+test = "pytest -s -x --cov=imeasurepy -vv"
+linter = "black . && isort ."
