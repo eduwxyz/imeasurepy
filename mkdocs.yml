@@ -1,0 +1,7 @@
+site_name: imeasurepy
+repo_url: "https://github.com/eduwxyz/imeasurepy"
+repo_name: imeasurepy
+
+theme:
+  name: material
+  language: pt-BR
